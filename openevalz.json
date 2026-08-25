@@ -1,0 +1,53 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "tau2",
+    "slug": "tau2",
+    "title": "Tau2",
+    "group": "Assistants",
+    "tags": [
+      "Agent"
+    ],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/tau2",
+    "inspect_ai": "0.3.260",
+    "eval_version": "3-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "low",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "tau2_airline",
+      "samples": 50
+    },
+    {
+      "name": "tau2_banking",
+      "samples": 97
+    },
+    {
+      "name": "tau2_retail",
+      "samples": 114
+    },
+    {
+      "name": "tau2_telecom",
+      "samples": 114
+    }
+  ],
+  "total_samples": 375,
+  "external_assets": [],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
